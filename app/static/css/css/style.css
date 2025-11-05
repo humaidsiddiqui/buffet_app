@@ -1,0 +1,132 @@
+/* ==============================
+   Buffet App - Global Styles
+   ============================== */
+
+/* ---------- Font & Color Setup ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #ff7043;      /* Orange accent */
+  --secondary-color: #222831;    /* Dark gray */
+  --light-bg: #f8f9fa;
+  --white: #fff;
+  --font-main: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--light-bg);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: var(--white);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+/* ---------- Search Form ---------- */
+.hero form input {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.hero form button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.hero form button:hover {
+  background-color: #ff5722;
+}
+
+/* ---------- Buffet Cards ---------- */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
