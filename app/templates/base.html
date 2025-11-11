@@ -23,8 +23,38 @@
     </ul>
   </nav>
 
-  <!-- Main Page Content -->
-  {% block content %}{% endblock %}
+  <!-- Main Content -->
+<div class="class-container">
+  <div class="card">
+    <img src="{{ url_for('static', filename='app\static\images\nihari.jpg') }}" class="card-img-top" alt="Buffet Image">
+    <div class="card-content">
+      <h3>CARD 1</h3>
+      <p>This is a description for Card 1.</p>
+      <a href="#" class="btn btn-primary">Book</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="{{ url_for('static', filename='app\static\images\nihari.jpg') }}" class="card-img-top" alt="Buffet Image">
+    <div class="card-content">
+      <h3>CARD 1</h3>
+      <p>This is a description for Card 1.</p>
+      <a href="#" class="btn btn-primary">Book</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="{{ url_for('static', filename='app\static\images\nihari.jpg') }}" class="card-img-top" alt="Buffet Image">
+    <div class="card-content">
+      <h3>CARD 1</h3>
+      <p>This is a description for Card 1.</p>
+      <a href="#" class="btn btn-primary">Book</a>
+    </div>
+  </div>
+</div>
+
+    
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
