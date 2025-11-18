@@ -8,6 +8,9 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- ADD THE GOOGLE MAPS SCRIPT HERE -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+
   <!-- Custom Tailwind Config -->
   <script>
     tailwind.config = {
@@ -34,18 +37,20 @@
 
   <!-- Navbar -->
   <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-    <a href="/" class="text-dark font-bold text-2xl tracking-tight">BuffetFinder</a>
-    <ul class="flex space-x-6">
-      <li><a href="/" class="hover:text-graymedium font-medium">Home</a></li>
-      <li><a href="/buffets" class="hover:text-graymedium font-medium">Buffets</a></li>
-      <li><a href="/Restaurants" class="hover:text-graymedium font-medium">Login</a></li>
-      <li><a href="/About" class="hover:text-graymedium font-medium">About</a></li>
-      <li><a href="/contact" class="hover:text-graymedium font-medium">Contact</a></li>
-      <li><a href="/BookNow" class="hover:text-graymedium font-medium">Book Now</a></li>
-    </ul>
-  </nav>
+  <a href="/" class="text-dark font-bold text-2xl tracking-tight">BuffetFinder</a>
+  <ul class="flex space-x-6">
+    <li><a href="/" class="hover:text-graymedium font-medium">Home</a></li>
+    <li><a href="/buffets" class="hover:text-graymedium font-medium">Buffets</a></li>
+    <li><a href="/pricing&hours" class="hover:text-graymedium font-medium">Pricing & Hours</a></li>
+    <li><a href="/Cuisines" class="hover:text-graymedium font-medium">Cuisines</a></li>
+    <li><a href="/location" class="hover:text-graymedium font-medium">Location</a></li>
+    <li><a href="/bookatable" class="bg-dark text-white px-4 py-2 rounded-md font-semibold
+                hover:bg-gray-800 transition">Book a Table</a></li>
+  </ul>
+</nav>
 
   <!-- Main Content -->
+  <div id="map" class="w-full h-96"></div>
   <main class="flex flex-wrap justify-center gap-8 px-6 py-16 bg-graylight">
 
     <!-- Card 1 -->
